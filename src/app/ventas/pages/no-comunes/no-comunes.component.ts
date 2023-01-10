@@ -23,6 +23,13 @@ export class NoComunesComponent {
     
   }
 
+  cambiarCliente(){
+    this.nombre= 'Daniela';
+    this.genero = 'femenino';
+  }
 
+  borrarCliente(){
+    this.clientes.pop()
+  }
 
 }
