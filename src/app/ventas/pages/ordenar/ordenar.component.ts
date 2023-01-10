@@ -5,5 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './ordenar.component.html',
 })
 export class OrdenarComponent {
+  trueOrFalse: boolean = false
 
+  toggleMayusculas(){
+    this.trueOrFalse = !this.trueOrFalse
+  }
 }
