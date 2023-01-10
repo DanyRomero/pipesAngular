@@ -5,6 +5,7 @@ import { AppRouterModule } from './app-router.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //cambiar el locale de la app
 import localeEs from '@angular/common/locales/es-MX'
@@ -22,7 +23,8 @@ registerLocaleData(localeFr);
     AppRouterModule,
     BrowserModule,
     SharedModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es-MX'}
