@@ -7,6 +7,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interface';
 })
 export class OrdenarComponent {
   trueOrFalse: boolean = false
+  ordenarPor : string = '';
   heroes: Heroe[] = [
     {
       nombre: 'Superman',
@@ -43,5 +44,11 @@ export class OrdenarComponent {
 
   toggleMayusculas(){
     this.trueOrFalse = !this.trueOrFalse
+  }
+
+  cambiarOrden(valor : string){
+    this.ordenarPor = valor;
+    console.log(valor)
+  
   }
 }
